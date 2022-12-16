@@ -10,7 +10,6 @@
  ### Windows: 
 
 * get cmake
-* get msbuild
 ```
 $ cmake -G "Unix Makefiles" .
 $ make
