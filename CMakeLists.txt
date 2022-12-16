@@ -5,9 +5,9 @@
 # specify CMake minimum version
 cmake_minimum_required(VERSION 3.10)
 
-# Choose compiler
+# SET COMPILER HERE
 # set(CMAKE_CXX_COMPILER "/usr/bin/clang++") # -John: clang++ 10.0.0-4
-set(CMAKE_CXX_COMPILER "/usr/bin/g++") # -John: g++ 9.4.0
+#set(CMAKE_CXX_COMPILER "/usr/bin/g++") # -John: g++ 9.4.0
 # set(CMAKE_CXX_COMPILER "/usr/bin/cpp") # -John: cpp 9.4.0
 
 # set project name and set the version number
