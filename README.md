@@ -12,9 +12,9 @@
 * get cmake
 * get msbuild
 ```
-$ cmake .
-$ msbuild JoyconChambara.vcxproj
-$ JoyconChambara.exe
+$ cmake -G "Unix Makefiles" .
+$ make
+$ ./JoyconChambara.exe
 ```
 
  ### Linux: 
