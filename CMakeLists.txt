@@ -7,8 +7,9 @@ cmake_minimum_required(VERSION 3.10)
 
 # SET COMPILER HERE
 # set(CMAKE_CXX_COMPILER "/usr/bin/clang++") # -John: clang++ 10.0.0-4
-#set(CMAKE_CXX_COMPILER "/usr/bin/g++") # -John: g++ 9.4.0
+# set(CMAKE_CXX_COMPILER "/usr/bin/g++") # -John: g++ 9.4.0
 # set(CMAKE_CXX_COMPILER "/usr/bin/cpp") # -John: cpp 9.4.0
+ set(CMAKE_CXX_COMPILER "/Program Files (x86)/mingw64/bin/g++") # -John: g++ 8.1.0
 
 # set project name and set the version number
 project(JoyconChambara VERSION 1.0)
