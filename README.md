@@ -6,20 +6,19 @@
  - Daniel Tolbert
  - John Zoscak
 
-## Run: 
- ### Windows: 
+## Build & Run:
 
-* get cmake
+### Windows: 
+
+* Note: Ensure environment variable `OpenCV_ROOT` is set to the path to your OpenCV installation to ensure the build completes. Ex: `C:\path\to\installation\opencv\build\x64\vc15\lib`
 ```
 $ cmake -G "Unix Makefiles" .
 $ make
 $ ./JoyconChambara.exe
 ```
 
- ### Linux: 
+### Linux: 
 
-* get cmake
-* get make
 ```
 $ cmake .
 $ make
