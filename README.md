@@ -11,10 +11,9 @@ ___
 > ### Windows: 
 
 >* get cmake
->* get msbuild
+>* get mingw
 ```
-$ cmake .
-$ msbuild JoyconChambara.vcxproj
+$ cmake -G "MinGW Makefiles" .
 $ JoyconChambara.exe
 ```
 
@@ -24,7 +23,6 @@ $ JoyconChambara.exe
 >* get make
 ```
 $ cmake .
-$ msbuild JoyconChambara.vcxproj
 $ make
 $ ./JoyconChambara
 ```
