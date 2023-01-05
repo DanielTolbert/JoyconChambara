@@ -5,6 +5,6 @@
 #define ACCELEROMETER_FUNCTIONS
 
 // Accelerometer processing function declarations go here
-int func_001(int a);
+void print_acceleration(int deviceId);
 
 #endif

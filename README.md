@@ -13,8 +13,8 @@ ___
 >* get cmake
 >* get mingw
 ```
-$ cmake -G "MinGW Makefiles" .
-$ JoyconChambara.exe
+$ cmake --build ./build
+$ ./build/JoyconChambara.exe
 ```
 
 > ### Linux: 

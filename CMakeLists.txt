@@ -19,8 +19,15 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 project(JoyconChambara VERSION 1.0)
 
 # Add subdirectories
-add_subdirectory(JoyShockLibrary)
 add_subdirectory(JoyconProcessing)
+add_subdirectory(JoyShockLibrary)
 
 # Add main.cpp as executable
 add_executable(JoyconChambara main.cpp)
+target_link_libraries(JoyconChambara PUBLIC JoyShockLibrary JoyconProcessing)
+
+target_include_directories(JoyconChambara
+    PUBLIC "${PROJECT_BINARY_DIR}"
+    PUBLIC "${PROJECT_SOURCE_DIR}/JoyShockLibrary"
+    PUBLIC "${PROJECT_SOURCE_DIR}/JoyconProcessing"
+)

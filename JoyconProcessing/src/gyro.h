@@ -1,10 +1,10 @@
 // gyro.h
 // 1/4/23
 
-#ifndef ACCELEROMETER_FUNCTIONS
-#define ACCELEROMETER_FUNCTIONS
+#ifndef GYROSCOPE_FUNCTIONS
+#define GYROSCOPE_FUNCTIONS
 
 // Gyroscope processing function declarations go here
-int func_002(int a);
+void print_gyroscope(int deviceId);
 
 #endif

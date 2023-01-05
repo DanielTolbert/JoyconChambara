@@ -1,9 +1,11 @@
-# add JoyconProcessing/*.h files to an executable
+# add JoyconProcessing/*.cpp files to an executable
 file(GLOB SOURCES src/*.cpp)
-file(GLOB HEADERS src/*.h)
-add_executable(JoyconProcessing ${SOURCES} ${HEADERS})
-
-set_target_properties(JoyconProcessing PROPERTIES LINKER_LANGUAGE CXX)
+add_library(JoyconProcessing ${SOURCES})
 
 target_link_libraries(JoyconProcessing JoyShockLibrary)
+
+target_include_directories(JoyconProcessing
+    PUBLIC "${PROJECT_BINARY_DIR}"
+    PUBLIC "${PROJECT_SOURCE_DIR}/JoyShockLibrary"
+)
 
